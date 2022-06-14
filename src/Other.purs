@@ -12,9 +12,6 @@ instance Show Money where
 times :: Int -> Money -> Money
 times x (Money y currency) = Money (x * y) currency
 
---from :: Int -> String -> Money
---from amount currency = Money amount currency
-
 dollar :: Int -> Money
 dollar amount = Money amount "USD"
 
